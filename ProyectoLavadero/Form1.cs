@@ -16,6 +16,7 @@ namespace ProyectoLavadero
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private List<Lavado> lavados = new List<Lavado>();
@@ -99,7 +100,6 @@ namespace ProyectoLavadero
         {
             Form2 finalizados = new Form2();
 
-
             finalizados.Show();
 
         }
@@ -122,6 +122,7 @@ namespace ProyectoLavadero
         //Carga de comboBox
         private void Form1_Load(object sender, EventArgs e)
         {
+            //carga colores
             comboBoxColor.Items.Add("Blanco");
             comboBoxColor.Items.Add("Negro");
             comboBoxColor.Items.Add("Gris");
@@ -129,7 +130,7 @@ namespace ProyectoLavadero
             comboBoxColor.Items.Add("Azul");
             comboBoxColor.Items.Add("Amarillo");
             comboBoxColor.Items.Add("Naranja");
-
+            //carga vehiculos
             comboBoxTipo.Items.Add("Auto");
             comboBoxTipo.Items.Add("Camioneta");
             comboBoxTipo.Items.Add("Moto");

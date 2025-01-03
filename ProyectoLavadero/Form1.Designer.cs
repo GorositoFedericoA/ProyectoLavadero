@@ -47,11 +47,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstClientes = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnVerFinalizado = new System.Windows.Forms.Button();
             this.btnFinalizado = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -218,9 +218,11 @@
             // 
             // lstClientes
             // 
+            this.lstClientes.ColumnWidth = 12;
             this.lstClientes.FormattingEnabled = true;
             this.lstClientes.ItemHeight = 16;
             this.lstClientes.Location = new System.Drawing.Point(9, 169);
+            this.lstClientes.MultiColumn = true;
             this.lstClientes.Name = "lstClientes";
             this.lstClientes.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lstClientes.Size = new System.Drawing.Size(639, 244);
@@ -239,6 +241,16 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controles";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(6, 201);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(128, 37);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "Cerrar";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnVerFinalizado
             // 
@@ -283,16 +295,6 @@
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(6, 201);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(128, 37);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Cerrar";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,6 +306,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Lavadero de autos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

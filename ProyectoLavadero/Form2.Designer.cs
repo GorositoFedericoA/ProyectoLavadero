@@ -60,6 +60,7 @@
             this.Controls.Add(this.lstFinalizados);
             this.Name = "Form2";
             this.Text = "Listos para retirar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
